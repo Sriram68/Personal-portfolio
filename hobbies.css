@@ -1,0 +1,124 @@
+/* Main hobbies section */
+#hobbies {
+    background-color: #f0f0f0; 
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  #hobbies h2 {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  #hobbies p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Hobby container for the cards/tiles */
+  .hobby-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Hobby items - animate these */
+  .hobby-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hidden before load */
+    transform: translateY(30px); /* Start from below */
+    transition: transform 0.6s ease, opacity 0.6s ease; /* Smooth transition */
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    color: #444;
+    display: inline-block;
+  }
+  
+  /* Reveal animation - visible class */
+  .hobby-item.animated {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+  }
+  
+  /* Hover effect */
+  .hobby-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: goldenrod;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Icon in the hobby item */
+  .hobby-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  /* Title of the hobby */
+  .hobby-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Description of the hobby */
+  .hobby-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Fade-in on page load with staggered delay */
+  .hobby-item {
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: calc(var(--i) * 0.3s); /* Staggered animation */
+  }
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Styling for images */
+  .hobby-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Adjust hobby item size for mobile */
+  @media (max-width: 600px) {
+    .hobby-item {
+      width: 100%;
+    }
+  }
+  body.dark-mode #hobbies {
+    background-color: #555;
+    color: #fff;
+  }  
+
+  body.dark-mode .hobby-item{
+    background-color: rgba(0, 0, 0, 0.616);
+    color: #fff;
+    
+  }  
+  body.dark-mode #hobbies p{
+    color: #afa2a2;
+  }  

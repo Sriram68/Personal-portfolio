@@ -1,0 +1,19 @@
+/* Default state for all elements - initially they are slightly smaller and translucent */
+.fade-in {
+    opacity: 0;
+    transform: translateZ(-30px) scale(0.95); /* Slightly smaller and farther back */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Faster and smoother transition */
+  }
+  
+  /* Initial state for fade-in elements */
+  .fade-in, .fade-in-load {
+    opacity: 0;
+    transform: translateZ(-30px) scale(0.95);
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out; /* Reduced timing for subtle appearance */
+  }
+  
+  /* On scroll or load - make them visible and scale back to normal */
+  .fade-in.visible, .fade-in-load.visible {
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }

@@ -1,0 +1,56 @@
+/* Skills Section */
+#skills {
+    background-color: #FF4C68;
+    color: #fff;
+}
+
+.skill-item {
+    background: #c07b7b;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: scale(1.1) rotate(-2deg); /* Larger rotation angle for visibility */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    background-color: lightblue;
+    color: black;
+}
+
+
+
+@keyframes border-flash {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Dark mode */
+body.dark-mode #skills {
+    background-color: #222;
+    color: #dcdcdc;
+}
+
+body.dark-mode .skill-item {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .skill-item:hover {
+    background-color: #666;
+    color: #fff;
+}

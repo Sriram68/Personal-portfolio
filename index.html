@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hobbies.css">
+    <link rel="stylesheet" href="fadeIn.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="achievements.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav id="navbar">
+        <a class="nav-brand" href="#hero">My Portfolio</a>
+    
+        <!-- Dropdown Button for Navigation -->
+        <button class="dropdown-btn">☰</button>
+        
+        <!-- Navigation Links (Dropdown Content) -->
+        <ul class="dropdown-content">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    
+        <!-- Dark Mode Toggle Button -->
+        <button id="toggle-button">🌙</button>
+    </nav>   
+
+    <!-- Hero Section -->
+    <section id="hero" class="fade-in-load">
+        <div class="hero-content">
+            <h1>Hello, I'm Sriram</h1>
+            <h2>Graduate Engineer Trainee </h2>
+            <h2>@ Psiog Digital</h2>
+            <button id="hero-button" class="hero-button">Explore My Work</button>
+        </div>
+        <img class="hero-img" src="images/Me2.jpg" alt="Hero Image" height = "600">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in-load fade-in">
+        <h2>About Me</h2>
+        <p>I am a self-driven individual with a keen interest in software development.<br/> I am passionate about coding, learning, and improving my skills.</p>
+        <img src="images/Me1.jpg" alt="About Me Image" class="about-img" height="450" width="20">
+        
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left-arrow">←</button>
+            <div class="carousel">
+                <div class="project-item">
+                    <img src="images/project-1.jpg" alt="Project 1" class="cropped-img">
+                    <!-- <h3>Data Analytics</h3> -->
+                    <p>Used advanced tools such as Power BI for visualization,<br/> SQL, MS Excel and Python language for understanding and <br/> processing the data and getting the expected results.</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project-2.png" alt="Project 2" class="cropped-img">
+                    <!-- <h3>Project 2</h3> -->
+                    <p>Integrated a secure payment gateway into a website implementing<br/> responsive design techniques and collaborated with a team<br/> of designers for achieving the outcome.</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/project-3.png" alt="Project 3" class = "cropped-img">
+                    <!-- <h3>Project 3</h3> -->
+                    <p>Built a home automation system using aurdino UNO and using C programming language.</p>
+                </div>
+            </div>
+            <button class="carousel-arrow right-arrow">→</button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <div class="skill-item">Java</div>
+        <div class="skill-item">Sql</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">React</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="hobbies" class="fade-in">
+        <h2>Hobbies</h2>
+        <p>Here are a few things I love to do in my spare time!</p>
+        
+        <div class="hobby-container">
+            <div class="hobby-item" style="--i: 1;">
+                <!-- <img src="images/guitar.jpg" alt="Playing Guitar" class="hobby-image"> -->
+                <div class="hobby-icon">🎸</div>
+                <h3>Playing Guitar</h3>
+                <p>I enjoy playing acoustic and electric guitar, creating music to relax.</p>
+            </div>
+            
+            <div class="hobby-item" style="--i: 2;">
+                <!-- <img src="images/badminton.jpg" alt="Playing Badminton" class="hobby-image"> -->
+                <div class="hobby-icon">🏸</div>
+                <h3>Playing Badminton</h3>
+                <p>Badminton is a sport that keeps me active and energized.</p>
+            </div>
+            
+            <div class="hobby-item" style="--i: 3;">
+                <!-- <img src="images/singing.jpg" alt="Singing" class="hobby-image"> -->
+                <div class="hobby-icon">🎤</div>
+                <h3>Singing</h3>
+                <p>Singing allows me to express my emotions and connect with others.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="fade-in">
+        <h2>Achievements</h2>
+        <div class="achievement-container">
+            <div class="achievement-card">
+                <h3>17th National Jamboree</h3>
+                <p>This president award is for for outstanding service in scouting and guiding.</p>
+                <img src="./Images/scout&guide.jpg" alt="Scout and Guides President Award">
+                <p class="long-desc">This award represents excellence in leadership, community service, and the commitment to scouting and guiding principles over several years.</p>
+            </div>
+    
+            <div class="achievement-card">
+                <h3>NPTEL Introduction to Industry 4.0</h3>
+                <p>Short Description: Completed with distinction.</p>
+                <img src="./Images/iot.jpg" alt="NPTEL Industry 4.0">
+                <p class="long-desc">This course explored emerging Industry 4.0 technologies, providing deep insights into industrial automation, IoT, and digital transformation.</p>
+            </div>
+    
+            <div class="achievement-card">
+                <h3>NPTEL Cloud Computing</h3>
+                <p>Short Description: Specialized in cloud systems.</p>
+                <img src="./Images/cloud computing .jpg" alt="NPTEL Cloud Computing">
+                <p class="long-desc">An in-depth understanding of cloud architectures, services, and deployment models, focusing on practical use cases and cloud technologies.</p>
+            </div>
+    
+            <div class="achievement-card">
+                <h3>The Complete Web Development Bootcamp (Udemy)</h3>
+                <p>Full-stack development certification.</p>
+                <img src="./Images/webdev bootcamp certificate udemy.jpg" alt="Udemy Web Development Bootcamp">
+                <p class="long-desc">Covered full-stack web development, including front-end and back-end technologies like HTML, CSS, JavaScript, Node.js, and databases.</p>
+            </div>
+    
+            <div class="achievement-card">
+                <h3>Cloud-based Analog IC Design Hackathon.</h3>
+                <p>Designed an IC using the Synopsys, USA tools.</p>
+                <img src="./Images/synopsys.jpg" alt="IC Design Hackathon">
+                <p class="long-desc">Certificate for designing innovative analog integrated circuits on a cloud platform during the national-level hackathon.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Footer -->
+    <footer class="fade-in">
+        <p>© 2024 Sriram G V - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

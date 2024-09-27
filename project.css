@@ -1,0 +1,109 @@
+#projects {
+    background-color: #efefef;
+    padding: 80px 20px;
+    position: relative;
+  }
+  .carousel {
+    display: flex; /* Arrange items horizontally */
+    transition: transform 0.3s ease-in-out; /* Slightly faster sliding */
+    /* width: 100%; */
+  }
+  
+  .carousel-container {
+    position: relative;
+    align-items: center;
+    overflow: hidden; /* Ensure overflow is hidden to hide items off-screen */
+    width: 100%; /* Adjust based on your container */
+  }
+  /* Projects Section */
+  .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #eee6e6;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .carousel-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container */
+    z-index: 2; /* Bring the container to the foreground */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    background-color: rgba(255, 166, 0, 0.1); /* Add a light background on hover */
+  }
+  .project-item {
+    flex: 0 0 100%; /* Each item will take up 100% of the carousel's width */
+    margin: 0; /* Remove margins to avoid overlap */
+    text-align: center; /* Center text inside the project item */
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  .project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  /* Ensure these styles are applied */
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    width: 100%; /* Make sure it stretches the full width */
+  }
+  
+  .project-item {
+    min-width: 100%; /* Ensure each project takes up the full width of the container */
+    flex: 0 0 100%; /* Each project is a full section */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  
+  .project-item img {
+    width: 80%; /* Adjust to your desired image size */
+    border-radius: 10px;
+  }
+  
+  /* Adjust the arrow button styles for better positioning */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF4C68;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 70px;
+  }
+  
+  .right-arrow {
+    right: 70px;
+  }
+
+  body.dark-mode #projects {
+    border: none;
+    background-color: #333;
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode #projects h2 {
+    color: #fff;
+  }
+  
+  body.dark-mode .project-item {
+    background-color: #444;
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode .carousel-arrow {
+    background-color: #555;
+    color: #fff;
+  }

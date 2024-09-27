@@ -1,0 +1,21 @@
+
+
+/* Hover effect */
+.carousel-container:hover,
+.project-item:hover {
+  transform: scale(1.05); /* More subtle scaling */
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  background-color: rgba(255, 166, 0, 0.05); /* Lighter background change */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease; /* Faster transitions */
+}
+
+/* For smooth transitions on hover and regular interaction */
+.fade-in.visible:hover, 
+.fade-in-load.visible:hover {
+  transform: scale(1.05); /* Subtle scaling on hover */
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  background-color: rgba(255, 166, 0, 0.05); /* Softer background change */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}

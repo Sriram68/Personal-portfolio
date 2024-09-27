@@ -1,0 +1,84 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+section:hover {
+  transform: translateY(-10px); /* Creates a floating effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+}
+h1, h2, h3 {
+  margin: 20px 0;
+}
+
+p {
+  color: #666;
+  margin: 20px 0;
+}
+.cropped-img{
+  width: 200px; /* Set the desired width */
+  height: 210px; /* Set the desired height */
+  object-fit: cover; /* Crop the image by filling the container */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.contact-button {
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #ef8172;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #ffcccb;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Body */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+/* Contact Section */
+body.dark-mode #contact {
+  background-color: #2a2a2a;
+  color: #dcdcdc;
+}
+
+body.dark-mode .contact-button {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #333;
+  color: #dcdcdc;
+}

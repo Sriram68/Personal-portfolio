@@ -1,0 +1,52 @@
+/* About Section */
+#about {
+    background-size:auto; /* Makes sure the image covers the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 50px 20px; /* Adjusts padding to give enough space for the content */
+    color: black; /* Ensures text is visible on top of the image */
+  }
+  
+  .about-img {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  body.dark-mode #about {
+    background-color: #2a2a2a;
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode #about h2 {
+    color: #fff;
+  }
+  
+  body.dark-mode #about p {
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode .about-img {
+    filter: grayscale(50%);
+  }
+
+  @media (max-width: 1028px) {
+    .about-img {
+        width: 40%; /* Smaller width on medium screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 50vh; /* Reduce max height on medium screens */
+        right: 20%; /* Adjust positioning to keep it centered */
+        transform: rotate(15deg); /* Slightly reduce rotation on smaller screens */
+    }
+  }
+  
+  /* For small screens (like mobile devices) */
+  @media (max-width: 768px) {
+    .about-img {
+        width: 30%; /* Further reduce width on mobile devices */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 40vh; /* Further reduce max height on mobile */
+        right: 10%; /* Adjust right position */
+        transform: rotate(10deg); /* Reduce the rotation on mobile for a cleaner look */
+    }
+  }

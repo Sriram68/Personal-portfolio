@@ -1,0 +1,76 @@
+#hero {
+    height: 100vh;
+    background-color: #FF4C68;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #FF4C68;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #ffcccb;
+  }
+  
+  .hero-img {
+    width: 40%;
+    transform: rotate(15deg);
+  }
+
+  body.dark-mode #hero {
+    background-color: #333;
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode .hero-content h1,
+  body.dark-mode .hero-content h2 {
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode .hero-button {
+    background-color: #444;
+    color: #dcdcdc;
+  }
+
+  
+@media (max-width: 1028px) {
+    .hero-img {
+        width: 40%; /* Smaller width on medium screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 50vh; /* Reduce max height on medium screens */
+        right: 20%; /* Adjust positioning to keep it centered */
+        transform: rotate(15deg); /* Slightly reduce rotation on smaller screens */
+    }
+  }
+  
+  /* For small screens (like mobile devices) */
+  @media (max-width: 768px) {
+    .hero-img {
+        width: 30%; /* Further reduce width on mobile devices */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 40vh; /* Further reduce max height on mobile */
+        right: 10%; /* Adjust right position */
+        transform: rotate(10deg); /* Reduce the rotation on mobile for a cleaner look */
+    }
+  }
